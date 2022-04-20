@@ -2,6 +2,7 @@ package n1exercici1;
 
 public class Principal {
 
+	@SuppressWarnings("removal")
 	public static void main(String[] args) {
 		
 		Treballador Juan = new Treballador("Juan","Sánchez",25);
