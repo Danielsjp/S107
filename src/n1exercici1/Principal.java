@@ -4,10 +4,10 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Treballador Pepe = new Treballador();
-		Pepe.Trabaja();
-		Controlador Juan = new Controlador();
-		Juan.Trabaja();
+		Treballador Juan = new Treballador("Juan","Sánchez",25);
+		System.out.println(Juan.Salario(9, 5));
+		Presencial Manu = new Presencial("Manu","Santos",77);
+		System.out.println(Manu.Salario(9, 5));
 
 	}
 

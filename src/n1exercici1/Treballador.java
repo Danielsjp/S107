@@ -2,11 +2,12 @@ package n1exercici1;
 
 public class Treballador {
 	
-	private String nom;
-	private String cognom;
-	private int preuHora;
+	protected String nom;
+	protected String cognom;
+	protected int preuHora;
+	protected int preuKm=5;
 	
-	public Treballador () {}
+	//public Treballador () {}
 	
 	public Treballador (String nom, String cognom,int preuHora) {
 		
@@ -16,10 +17,11 @@ public class Treballador {
 		
 	}
 	
-	public void Trabaja(){
-		
-		System.out.println("El Trabajador esta ocupado");
-		
+	public String Salario(int horas, int km) {
+		int totalHoras = horas*preuHora;
+		int totalKm = preuKm*km;
+		int total = totalKm+totalHoras;
+		return "El trabajador normal: "+ nom + " debe cobrar: "+total;
 	}
 
 }
