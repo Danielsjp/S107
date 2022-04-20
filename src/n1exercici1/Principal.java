@@ -8,7 +8,7 @@ public class Principal {
 		System.out.println(Juan.Salario(9, 5));
 		Presencial Manu = new Presencial("Manu","Santos",77);
 		System.out.println(Manu.Salario(9, 5));
-
+		System.out.println(Manu.SalarioDeprecated(9, 5));
 	}
 
 }
